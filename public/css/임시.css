@@ -1,0 +1,18 @@
+body {
+    background: linear-gradient(90deg, #8dafca 0%, #9ac3b5 100%);
+}
+.container {
+    margin: 0 auto;
+    outline: 1px solid red;
+}
+.container .row {
+    padding: 2vw 8vw;
+}
+
+
+/* #profile */
+#profileCont {
+    height: 500px;
+    background: #eaeaea;
+    border-radius: 50px;
+}

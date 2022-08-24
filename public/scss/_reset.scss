@@ -1,0 +1,61 @@
+*{margin:0;padding:0;font:inherit;color:inherit;}
+*, :after, :before {box-sizing:border-box;flex-shrink:0;}
+html, body {height:100%;}
+img, picture, video, canvas, svg {display: block;max-width:100%;}
+button {background:none;border:0;cursor:pointer;}
+a {text-decoration:none;color: inherit; display: block;}
+table {border-collapse:collapse;border-spacing:0}
+ul, li, ol {list-style: none;}
+fieldset, img {border: 0 none; vertical-align: top;}
+b {font-weight: 500;}
+/* input style */
+input {background-image: none;}
+input[type=button],
+input[type=reset],
+input[type=text],
+input[type=password],
+input[type=submit],
+input[type=search],
+input[type=tel],
+input[type=email] {
+    -webkit-appearance: none;
+    border-radius: 0;
+    border: none;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+input:checked[type=checkbox] {
+    -webkit-appearance: checkbox;
+}
+input:focus {outline:none;}
+
+/* 모바일 통일성 */
+:root {-webkit-tap-highlight-color:transparent;-webkit-text-size-adjust:100%;text-size-adjust:100%;cursor:default;line-height:1.5;overflow-wrap:break-word;-moz-tab-size:4;tab-size:4}
+
+/* clearfix (IE7) */
+.clearfix {zoom: 1;}
+.clearfix::before, .clearfix::after {
+    display: block;
+    content: '';
+    line-height: 0;
+}
+.clearfix::after {
+    clear: both;
+}
+
+/* ir */
+/* 이미지O 대체 텍스트 */
+.ir_pm {display: block; overflow: hidden; font-size: 0; line-height: 0; text-indent: -9999px;}
+/* 이미지X 대체텍스트 */
+.ir_wa {display: block; overflow: hidden; position: relative; z-index: -1; width: 100%; height: 100%;}
+/* 접근성 숨김 텍스트 */
+.ir_su {overflow: hidden; position: absolute; width: 0; height: 0; line-height: 0; text-indent: -9999px;}
+
+
+/* 폰트 */
+html {
+    font-size: 62.5%;
+    font-size: 1.6rem;
+}

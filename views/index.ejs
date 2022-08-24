@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../public/css/임시.css">
+    <link rel="stylesheet" href="../public/css/main.css">
+
+    <title>Fancy's Portfolio</title>
+</head>
+<body>
+
+    <p class="greeting"></p>
+
+    <section id="profile">
+        <div class="container">
+            <div class="row">
+                <article id="profileCont">
+                    <h2>안녕</h2>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        let getNickname = window.localStorage.getItem('nickname');
+
+        var greeting = `안녕하세요 ${getNickname}님. 반나서 반갑습니다!`
+        $('.greeting').html(greeting)
+    </script>
+</body>
+</html>
