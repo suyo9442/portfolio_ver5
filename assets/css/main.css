@@ -137,21 +137,3 @@ input:focus {
   line-height: 0;
   text-indent: -9999px;
 }
-
-/* 폰트 */
-html {
-  font-size: 62.5%;
-  font-size: 1.6rem;
-}
-
-body {
-  background: linear-gradient(90deg, rgb(141, 175, 202) 0%, rgb(154, 195, 181) 100%);
-}
-
-.container {
-  margin: 0 auto;
-  outline: 1px solid red;
-}
-.container .row {
-  padding: 0 8vw;
-}

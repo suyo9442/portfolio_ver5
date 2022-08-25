@@ -2,16 +2,3 @@
 
 @import './reset';
 // @import './style';
-
-
-body {
-    background: linear-gradient(90deg, rgba(141,175,202,1) 0%, rgba(154,195,181,1) 100%);
-}
-.container {
-    margin: 0 auto;
-    outline: 1px solid red;
-
-    .row {
-        padding: 0 8vw;
-    }
-}
