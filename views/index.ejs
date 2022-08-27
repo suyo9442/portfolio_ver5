@@ -14,540 +14,569 @@
 <body>
 
     <!-- <p class="greeting"></p> -->
-
-    <section id="profile">
-        <div class="container">
-            <div class="row">
-                <article id="profileCont" class="contBox shadow">
-                    <div class="cont_img">
-                        <div class="imgBg">
-                            <img src="../public/image/profile.png" alt="">
+    <div id="wrap">
+        <section id="profile">
+            <div class="container">
+                <div class="row">
+                    <article id="profileCont" class="contBox shadow">
+                        <div class="cont_img">
+                            <div class="imgBg">
+                                <img src="../public/image/profile.png" alt="">
+                            </div>
                         </div>
-                    </div>
-                    <div class="cont_desc">
-                        <p class="p-1">
-                            sim's name is . . .
-                            <span style="display: block;">kim soo</span>
-                        </p>
-                        <p class="p-2">
-                            Soon to be a
-                            <span style="display: block;">web developer👩‍💻</span>
-                        </p>
-                        <p class="p-3">Korea born and raised in Seoul🌆</p>
-                        <ul class="can">
-                            <li class="she">She can&nbsp;</li>
-                            <li>#Publishing</li>
-                            <li>#VanilaJS</li>
-                            <li>#NodeJS</li>
-                            <li>#React</li>
-                        </ul>
-                        <ul class="is">
-                            <li class="she">She is&nbsp;</li>
-                            <li>#Honest</li>
-                            <li>#Responsive</li>
-                            <li>#Creative</li>
-                            <li>#Kind</li>
-                        </ul>
-                    </div>
-                </article>
-                <article id="guide">
-                    <p class="shake-vertical">이 심에 대해서 더 알아볼까요? 👇👇</p>
-                </article>
+                        <div class="cont_desc">
+                            <p class="p-1">
+                                sim's name is . . .
+                                <span style="display: block;">kim soo</span>
+                            </p>
+                            <p class="p-2">
+                                Soon to be a
+                                <span style="display: block;">web developer👩‍💻</span>
+                            </p>
+                            <p class="p-3">Korea born and raised in Seoul🌆</p>
+                            <ul class="can">
+                                <li class="she">She can&nbsp;</li>
+                                <li>#Publishing</li>
+                                <li>#VanilaJS</li>
+                                <li>#NodeJS</li>
+                                <li>#React</li>
+                            </ul>
+                            <ul class="is">
+                                <li class="she">She is&nbsp;</li>
+                                <li>#Honest</li>
+                                <li>#Responsive</li>
+                                <li>#Creative</li>
+                                <li>#Kind</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <!-- <article id="guide">
+                        <p class="shake-vertical">이 심에 대해서 더 알아볼까요? 👇👇</p>
+                    </article> -->
+                    <button data-id='1' type="button" class="next">next</button>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+        
+        <section id="experience">
+            <div class="container">
+                <div class="row">
+                    <%- include('diamond.html') %>
+                    <article id="experCont">
+                        <div class="education">
+                            <div id="subject">
+                                <h2>
+                                    <span class="circle shadow2"><em></em></span>
+                                    <span class="title shadow2">Educations...</span>
+                                </h2>
+                            </div>
+                            <ul>
+                                <li>
+                                    <img src="../public/image/Book.png" alt="대학교">
+                                    <strong>Lincoln High School</strong>
+                                    <p>2021.02 - 2017.08</p>
+                                </li>
+                                <li>
+                                    <img src="../public/image/line.svg">
+                                </li>
+                                <li>
+                                    <img src="../public/image/Book.png" alt="대학교">
+                                    <strong>Myungju UNIV.</strong>
+                                    <p>2021.02 - 2017.08</p>
+                                </li>
+                                <li>
+                                    <img src="../public/image/line2.svg">
+                                </li>
+                                <li>
+                                    <img src="../public/image/Homework.png" alt="웹퍼블리싱">
+                                    <strong>웹퍼블리싱 기초역량</strong>
+                                    <p>2020.06 - 2020.11</p>
+                                </li>
+                                <li>
+                                    <img src="../public/image/line.svg">
+                                </li>
+                                <li>
+                                    <img src="../public/image/Homework.png" alt="UIUX">
+                                    <strong>UIUX 스페셜리스트</strong>
+                                    <p>2021.12 - 2022.03</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="work">
+                            <div id="subject">
+                                <h2>
+                                    <span class="circle shadow2"><em></em></span>
+                                    <span class="title shadow2">Work Experience...</span>
+                                </h2>
+                            </div>
+                            <ul>
+                                <li>
+                                    <img src="../public/image/Briefcase.png" alt="대학교">
+                                    <strong>해맑은동물병원</strong>
+                                    <p>2017.08 - 2018.02</p>
+                                </li>
+                                <li>
+                                    <img src="../public/image/line.svg">
+                                </li>
+                                <li>
+                                    <img src="../public/image/Briefcase5.png" alt="대학교">
+                                    <strong>호박앤컴퍼니</strong>
+                                    <p>2021.03 - 2021.05</p>
+                                </li>
+                                <li>
+                                    <img src="../public/image/line2.svg">
+                                </li>
+                                <li>
+                                    <img src="../public/image/HelpingHands.png" alt="웹퍼블리싱">
+                                    <strong>Your Co-worker☺️</strong>
+                                    <p>2022 - </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <button data-id='2' type="button" class="next">next</button>
+                    <button data-id='0' type="button" class="prev">prev</button>
+                </div>
+            </div>
+        </section>
     
-    <section id="experience">
-        <div class="container">
-            <div class="row">
-                <%- include('diamond.html') %>
-                <article id="experCont">
-                    <div class="education">
-                        <div id="subject">
-                            <h2>
-                                <span class="circle shadow2"><em></em></span>
-                                <span class="title shadow2">Educations...</span>
-                            </h2>
+        <section id="skills">
+            <div class="container">
+                <div class="row">
+                    <%- include('diamond.html') %>
+                    <article id="subject2">
+                        <div class="wrap shadow2">
+                            <div class="list list1">
+                                <span>Skills&nbsp;</span>
+                                <span><img src="../public/image/play.png"></span>
+                            </div>
+                            <div class="list list2">Level</div>
                         </div>
+                    </article>
+                    <article id="skillCont">
                         <ul>
-                            <li>
-                                <img src="../public/image/Book.png" alt="대학교">
-                                <strong>Lincoln High School</strong>
-                                <p>2021.02 - 2017.08</p>
+                            <li class="shadow2">
+                                <div class="img">
+                                    <img src="../public/image/html.png" alt="HTML">
+                                </div>
+                                <div class="desc">
+                                    <p>제 스킬은 어쩌고입니다아아아.</p>
+                                    <span>
+                                        <em></em>
+                                    </span>
+                                </div>
+                                <div class="percent">
+                                    <p>90%</p>
+                                </div>
                             </li>
-                            <li>
-                                <img src="../public/image/line.svg">
+                            <li class="shadow2">
+                                <div class="img">
+                                    <img src="../public/image/css.png" alt="CSS">
+                                </div>
+                                <div class="desc">
+                                    <p>제 스킬은 어쩌고입니다아아아.</p>
+                                    <span>
+                                        <em></em>
+                                    </span>
+                                </div>
+                                <div class="percent">
+                                    <p>90%</p>
+                                </div>
                             </li>
-                            <li>
-                                <img src="../public/image/Book.png" alt="대학교">
-                                <strong>Myungju UNIV.</strong>
-                                <p>2021.02 - 2017.08</p>
+                            <li class="shadow2">
+                                <div class="img">
+                                    <img src="../public/image/js.png" alt="JS">
+                                </div>
+                                <div class="desc">
+                                    <p>제 스킬은 어쩌고입니다아아아.</p>
+                                    <span>
+                                        <em></em>
+                                    </span>
+                                </div>
+                                <div class="percent">
+                                    <p>90%</p>
+                                </div>
                             </li>
-                            <li>
-                                <img src="../public/image/line2.svg">
+                            <li class="shadow2">
+                                <div class="img">
+                                    <img src="../public/image/react.png" alt="React">
+                                </div>
+                                <div class="desc">
+                                    <p>제 스킬은 어쩌고입니다아아아.</p>
+                                    <span>
+                                        <em></em>
+                                    </span>
+                                </div>
+                                <div class="percent">
+                                    <p>90%</p>
+                                </div>
                             </li>
-                            <li>
-                                <img src="../public/image/Homework.png" alt="웹퍼블리싱">
-                                <strong>웹퍼블리싱 기초역량</strong>
-                                <p>2020.06 - 2020.11</p>
+                            <li class="shadow2">
+                                <div class="img">
+                                    <img src="../public/image/nodejs.png" alt="NodeJs">
+                                </div>
+                                <div class="desc">
+                                    <p>제 스킬은 어쩌고입니다아아아.</p>
+                                    <span>
+                                        <em></em>
+                                    </span>
+                                </div>
+                                <div class="percent">
+                                    <p>90%</p>
+                                </div>
                             </li>
-                            <li>
-                                <img src="../public/image/line.svg">
+                            <li class="shadow2">
+                                <div class="img">
+                                    <img src="../public/image/github.png" alt="Github">
+                                </div>
+                                <div class="desc">
+                                    <p>제 스킬은 어쩌고입니다아아아.</p>
+                                    <span>
+                                        <em></em>
+                                    </span>
+                                </div>
+                                <div class="percent">
+                                    <p>90%</p>
+                                </div>
                             </li>
-                            <li>
-                                <img src="../public/image/Homework.png" alt="UIUX">
-                                <strong>UIUX 스페셜리스트</strong>
-                                <p>2021.12 - 2022.03</p>
+                            <li class="shadow2">
+                                <div class="img">
+                                    <img src="../public/image/photoshop.png" alt="Photoshop">
+                                </div>
+                                <div class="desc">
+                                    <p>제 스킬은 어쩌고입니다아아아.</p>
+                                    <span>
+                                        <em></em>
+                                    </span>
+                                </div>
+                                <div class="percent">
+                                    <p>90%</p>
+                                </div>
+                            </li>
+                            <li class="shadow2">
+                                <div class="img">
+                                    <img src="../public/image/xd.png" alt="XD">
+                                </div>
+                                <div class="desc">
+                                    <p>제 스킬은 어쩌고입니다아아아.</p>
+                                    <span>
+                                        <em></em>
+                                    </span>
+                                </div>
+                                <div class="percent">
+                                    <p>90%</p>
+                                </div>
                             </li>
                         </ul>
-                    </div>
-                    <div class="work">
-                        <div id="subject">
-                            <h2>
-                                <span class="circle shadow2"><em></em></span>
-                                <span class="title shadow2">Work Experience...</span>
-                            </h2>
-                        </div>
-                        <ul>
-                            <li>
-                                <img src="../public/image/Briefcase.png" alt="대학교">
-                                <strong>해맑은동물병원</strong>
-                                <p>2017.08 - 2018.02</p>
+                    </article>
+                    <button data-id='3' type="button" class="next">next</button>
+                    <button data-id='1' type="button" class="prev">prev</button>
+                </div>
+            </div>
+        </section>
+    
+        <section id="favorability">
+            <div class="container">
+                <div class="row">
+                    <%- include('diamond.html') %>
+                    <article id="hobbies" class="sec contBox shadow">
+                        <div class="tit">hobbies</div>
+                            <ul class="content_wrap">
+                                <li>
+                                    <span>
+                                        <img src="../public/image/Popcorn.png" alt="movies">
+                                    </span>
+                                    <strong>Watching Movies</strong>
+                                </li>
+                                <li>
+                                    <span>
+                                        <img src="../public/image/VideoGameController.png" alt="games">
+                                    </span>
+                                    <strong>Playing Mobile Games</strong>
+                                </li>
+                                <li>
+                                    <span>
+                                        <img src="../public/image/FryingPanEggs.png" alt="Cooking">
+                                    </span>
+                                    <strong>Cooking</strong>
+                                </li>
+                                <li>
+                                    <span>
+                                        <img src="../public/image/Palette.png" alt="Drawing">
+                                    </span>
+                                    <strong>Drawing</strong>
+                                </li>
+                            </ul>
+                    </article>
+                    <article id="favor" class="sec contBox shadow">
+                            <div class="tit">likes / dislikes</div>
+                            <div class="content_wrap">
+                                <div class="content">
+                                    <div class="like favor">
+                                        <div class="thumbs thumbs1">
+                                            <p>👍</p>
+                                        </div>
+                                        <div class="list">
+                                            <ul>
+                                                <li><img src="../public/image/Cat.png" alt="Cat"></li>
+                                                <li><img src="../public/image/Penguin.png" alt="Penguin"></li>
+                                                <li><img src="../public/image/SproutSoil.png" alt="nature"></li>
+                                                <li class="plus">
+                                                    <img src="../public/image/plus.svg" alt="add">
+                                                </li>
+                                                <li class="plus">
+                                                    <img src="../public/image/plus.svg" alt="add">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="dislike favor">
+                                        <div class="thumbs thumbs2">
+                                            <p>👎</p>
+                                        </div>
+                                        <div class="list">
+                                            <ul>
+                                                <li><img src="../public/image/BeetleRed.png" alt="Bug"></li>
+                                                <li><img src="../public/image/Treasure.png" alt="Treasure"></li>
+                                                <li class="plus2">
+                                                    <img src="../public/image/plus.svg" alt="add">
+                                                </li>
+                                                <li class="plus2">
+                                                    <img src="../public/image/plus.svg" alt="add">
+                                                </li>
+                                                <li class="plus2">
+                                                    <img src="../public/image/plus.svg" alt="add">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </article>
+                    <button data-id='4' type="button" class="next">next</button>
+                    <button data-id='2' type="button" class="prev">prev</button>
+                </div>
+            </div>
+        </section>
+    
+        <section id="project">
+            <div class="container">
+                <div class="row">
+                    <%- include('diamond.html') %>
+                    <!-- <div id="subject">
+                        <h2>
+                            <span class="circle shadow2"><em></em></span>
+                            <span class="title shadow2">Project...</span>
+                        </h2>
+                    </div> -->
+                    <article id="projectList" class="sec contBox shadow">
+                        <div class="tit">PROJECTS</div>
+                        <ul class="proj_wrap">
+                            <li class="shadow2">
+                                <div class="img">
+                                    <img src="../public/image/por3.png" alt="Droptop">
+                                </div>
+                                <div class="desc">
+                                    <strong>감사일기</strong>
+                                </div>
+                                <span class="frongBg">
+                                </span>
+                                <div id="explain">
+                                    <ul class="tag">
+                                        <li>#NodeJS</li>
+                                        <li>#MongDB</li>
+                                        <li>#바닐라JS</li>
+                                    </ul>
+                                    <div class="desc">
+                                        <p>📌 개인작업 100%</p>
+                                        <p>📌 발행/수정/삭제 기능을 구현한 일기 프로그램</p>
+                                    </div>
+                                    <ul class="btns">
+                                        <li><a href="#">SITE</a></li>
+                                        <li><a href="#">PROCESS</a></li>
+                                    </ul>
+                                </div>
                             </li>
-                            <li>
-                                <img src="../public/image/line.svg">
+                            <li class="shadow2">
+                                <div class="img">
+                                    <img src="../public/image/por0.png" alt="Sidmool">
+                                </div>
+                                <div class="desc">
+                                    <strong>시드물</strong>
+                                </div>
+                                <span class="frongBg">
+                                </span>
+                                <div id="explain">
+                                    <ul class="tag">
+                                        <li>#SASS</li>
+                                        <li>#크로스브라우징</li>
+                                        <li>#데이터바인딩</li>
+                                    </ul>
+                                    <div class="desc">
+                                        <p>📌 개인작업 100%</p>
+                                        <p>📌 검색기능, 데이터 바인딩을 구현한 리뉴얼 사이트</p>
+                                    </div>
+                                    <ul class="btns">
+                                        <li><a href="#">SITE</a></li>
+                                        <li><a href="#">PROCESS</a></li>
+                                    </ul>
+                                </div>
                             </li>
-                            <li>
-                                <img src="../public/image/Briefcase5.png" alt="대학교">
-                                <strong>호박앤컴퍼니</strong>
-                                <p>2021.03 - 2021.05</p>
+                            <li class="shadow2">
+                                <div class="img">
+                                    <img src="../public/image/por5.png" alt="Portfolio">
+                                </div>
+                                <div class="desc">
+                                    <strong>포트폴리오</strong>
+                                </div>
+                                <span class="frongBg">
+                                </span>
+                                <div id="explain">
+                                    <ul class="tag">
+                                        <li>#반응형</li>
+                                        <li>#메타태그</li>
+                                        <li>#디자인</li>
+                                    </ul>
+                                    <div class="desc">
+                                        <p>📌 개인작업 100%</p>
+                                        <p>📌 직접 디자인한 반응형 포트폴리오 사이트</p>
+                                    </div>
+                                    <ul class="btns">
+                                        <li><a href="#">SITE</a></li>
+                                        <li><a href="#">PROCESS</a></li>
+                                    </ul>
+                                </div>
                             </li>
-                            <li>
-                                <img src="../public/image/line2.svg">
+                            <li class="shadow2">
+                                <div class="img">
+                                    <img src="../public/image/por1.png" alt="Megabox">
+                                </div>
+                                <div class="desc">
+                                    <strong>메가박스</strong>
+                                </div>
+                                <span class="frongBg">
+                                </span>
+                                <div id="explain">
+                                    <ul class="tag">
+                                        <li>#반응형</li>
+                                        <li>#메타태그</li>
+                                        <li>#HTML5</li>
+                                    </ul>
+                                    <div class="desc">
+                                        <p>📌 개인작업 100%</p>
+                                        <p>📌 반응형을 고려한 메가박스 클론 사이트</p>
+                                    </div>
+                                    <ul class="btns">
+                                        <li><a href="#">SITE</a></li>
+                                        <li><a href="#">PROCESS</a></li>
+                                    </ul>
+                                </div>
                             </li>
-                            <li>
-                                <img src="../public/image/HelpingHands.png" alt="웹퍼블리싱">
-                                <strong>Your Co-worker☺️</strong>
-                                <p>2022 - </p>
+                            <li class="shadow2">
+                                <div class="img">
+                                    <img src="../public/image/por2.png" alt="Gentium">
+                                </div>
+                                <div class="desc">
+                                    <strong>젠티움</strong>
+                                </div>
+                                <span class="frongBg">
+                                </span>
+                                <div id="explain">
+                                    <ul class="tag">
+                                        <li>#바닐라JS</li>
+                                        <li>#HTML5</li>
+                                        <li>#CSS3</li>
+                                    </ul>
+                                    <div class="desc">
+                                        <p>📌 개인작업 100%</p>
+                                        <p>📌 스크롤, 슬라이드 애니메이션 직접 구현</p>
+                                    </div>
+                                    <ul class="btns">
+                                        <li><a href="#">SITE</a></li>
+                                        <li><a href="#">PROCESS</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="shadow2">
+                                <div class="img">
+                                    <img src="../public/image/por4.png" alt="weltree">
+                                </div>
+                                <div class="desc">
+                                    <strong>웰트리</strong>
+                                </div>
+                                <span class="frongBg">
+                                </span>
+                                <div id="explain">
+                                    <ul class="tag">
+                                        <li>#HTML5</li>
+                                        <li>#CSS3</li>
+                                        <li>#Jquery</li>
+                                    </ul>
+                                    <div class="desc">
+                                        <p>📌 개인작업 100%</p>
+                                        <p>📌 기본 웹퍼블리싱을 고려한 리뉴얼 사이트 </p>
+                                    </div>
+                                    <ul class="btns">
+                                        <li><a href="#">SITE</a></li>
+                                        <li><a href="#">PROCESS</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="shadow2">
+                                <div class="img">
+                                    <img src="../public/image/por3.png" alt="Droptop">
+                                </div>
+                                <div class="desc">
+                                    <strong>드롭탑</strong>
+                                </div>
+                                <span class="frongBg">
+                                </span>
+                                <div id="explain">
+                                    <ul class="tag">
+                                        <li>#HTML5</li>
+                                        <li>#CSS3</li>
+                                        <li>#Jquery</li>
+                                    </ul>
+                                    <div class="desc">
+                                        <p>📌 개인작업 100%</p>
+                                        <p>📌 기본 웹퍼블리싱을 고려한 리뉴얼 사이트 </p>
+                                    </div>
+                                    <ul class="btns">
+                                        <li><a href="#">SITE</a></li>
+                                        <li><a href="#">PROCESS</a></li>
+                                    </ul>
+                                </div>
                             </li>
                         </ul>
+                    </article>
+                    <button data-id='3' type="button" class="prev">prev</button>
+                    <button type="button" class="next" id="pickBtn">NEXT</button>
+                </div>
+            </div>
+            <div id="blackBg">
+            </div>
+            <div id="pickPop">  
+                <div class="pick_bar">
+                </div>
+                <div class="pick_cont">
+                    <p>
+                        이 심을 <span>PICK</span> 하고 함께
+                        <span>PLAY</span> 하시겠습니까? <br>
+                        <em>*️⃣ YES를 누르시면 CONTACT로 이동합니다.</em>
+                    </p>
+                    <div>
+                        <button type="button">YES🥰</button>
+                        <button type="button" id="pickClose">NO🥲</button>
                     </div>
-                </article>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="skills">
-        <div class="container">
-            <div class="row">
-                <%- include('diamond.html') %>
-                <article id="subject2">
-                    <div class="wrap shadow2">
-                        <div class="list list1">
-                            <span>Skills&nbsp;</span>
-                            <span><img src="../public/image/play.png"></span>
-                        </div>
-                        <div class="list list2">Level</div>
-                    </div>
-                </article>
-                <article id="skillCont">
-                    <ul>
-                        <li class="shadow2">
-                            <div class="img">
-                                <img src="../public/image/html.png" alt="HTML">
-                            </div>
-                            <div class="desc">
-                                <p>제 스킬은 어쩌고입니다아아아.</p>
-                                <span>
-                                    <em></em>
-                                </span>
-                            </div>
-                            <div class="percent">
-                                <p>90%</p>
-                            </div>
-                        </li>
-                        <li class="shadow2">
-                            <div class="img">
-                                <img src="../public/image/css.png" alt="CSS">
-                            </div>
-                            <div class="desc">
-                                <p>제 스킬은 어쩌고입니다아아아.</p>
-                                <span>
-                                    <em></em>
-                                </span>
-                            </div>
-                            <div class="percent">
-                                <p>90%</p>
-                            </div>
-                        </li>
-                        <li class="shadow2">
-                            <div class="img">
-                                <img src="../public/image/js.png" alt="JS">
-                            </div>
-                            <div class="desc">
-                                <p>제 스킬은 어쩌고입니다아아아.</p>
-                                <span>
-                                    <em></em>
-                                </span>
-                            </div>
-                            <div class="percent">
-                                <p>90%</p>
-                            </div>
-                        </li>
-                        <li class="shadow2">
-                            <div class="img">
-                                <img src="../public/image/react.png" alt="React">
-                            </div>
-                            <div class="desc">
-                                <p>제 스킬은 어쩌고입니다아아아.</p>
-                                <span>
-                                    <em></em>
-                                </span>
-                            </div>
-                            <div class="percent">
-                                <p>90%</p>
-                            </div>
-                        </li>
-                        <li class="shadow2">
-                            <div class="img">
-                                <img src="../public/image/nodejs.png" alt="NodeJs">
-                            </div>
-                            <div class="desc">
-                                <p>제 스킬은 어쩌고입니다아아아.</p>
-                                <span>
-                                    <em></em>
-                                </span>
-                            </div>
-                            <div class="percent">
-                                <p>90%</p>
-                            </div>
-                        </li>
-                        <li class="shadow2">
-                            <div class="img">
-                                <img src="../public/image/github.png" alt="Github">
-                            </div>
-                            <div class="desc">
-                                <p>제 스킬은 어쩌고입니다아아아.</p>
-                                <span>
-                                    <em></em>
-                                </span>
-                            </div>
-                            <div class="percent">
-                                <p>90%</p>
-                            </div>
-                        </li>
-                        <li class="shadow2">
-                            <div class="img">
-                                <img src="../public/image/photoshop.png" alt="Photoshop">
-                            </div>
-                            <div class="desc">
-                                <p>제 스킬은 어쩌고입니다아아아.</p>
-                                <span>
-                                    <em></em>
-                                </span>
-                            </div>
-                            <div class="percent">
-                                <p>90%</p>
-                            </div>
-                        </li>
-                        <li class="shadow2">
-                            <div class="img">
-                                <img src="../public/image/xd.png" alt="XD">
-                            </div>
-                            <div class="desc">
-                                <p>제 스킬은 어쩌고입니다아아아.</p>
-                                <span>
-                                    <em></em>
-                                </span>
-                            </div>
-                            <div class="percent">
-                                <p>90%</p>
-                            </div>
-                        </li>
-                    </ul>
-                </article>
-            </div>
-        </div>
-    </section>
+    </div>
 
-    <section id="favorability">
-        <div class="container">
-            <div class="row">
-                <%- include('diamond.html') %>
-                <article id="hobbies" class="sec contBox shadow">
-                    <div class="tit">hobbies</div>
-                        <ul class="content_wrap">
-                            <li>
-                                <span>
-                                    <img src="../public/image/Popcorn.png" alt="movies">
-                                </span>
-                                <strong>Watching Movies</strong>
-                            </li>
-                            <li>
-                                <span>
-                                    <img src="../public/image/VideoGameController.png" alt="games">
-                                </span>
-                                <strong>Playing Mobile Games</strong>
-                            </li>
-                            <li>
-                                <span>
-                                    <img src="../public/image/FryingPanEggs.png" alt="Cooking">
-                                </span>
-                                <strong>Cooking</strong>
-                            </li>
-                            <li>
-                                <span>
-                                    <img src="../public/image/Palette.png" alt="Drawing">
-                                </span>
-                                <strong>Drawing</strong>
-                            </li>
-                        </ul>
-                </article>
-                <article id="favor" class="sec contBox shadow">
-                        <div class="tit">likes / dislikes</div>
-                        <div class="content_wrap">
-                            <div class="content">
-                                <div class="like favor">
-                                    <div class="thumbs thumbs1">
-                                        <p>👍</p>
-                                    </div>
-                                    <div class="list">
-                                        <ul>
-                                            <li><img src="../public/image/Cat.png" alt="Cat"></li>
-                                            <li><img src="../public/image/Penguin.png" alt="Penguin"></li>
-                                            <li><img src="../public/image/SproutSoil.png" alt="nature"></li>
-                                            <li class="plus">
-                                                <img src="../public/image/plus.svg" alt="add">
-                                            </li>
-                                            <li class="plus">
-                                                <img src="../public/image/plus.svg" alt="add">
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="dislike favor">
-                                    <div class="thumbs thumbs2">
-                                        <p>👎</p>
-                                    </div>
-                                    <div class="list">
-                                        <ul>
-                                            <li><img src="../public/image/BeetleRed.png" alt="Bug"></li>
-                                            <li><img src="../public/image/Treasure.png" alt="Treasure"></li>
-                                            <li class="plus2">
-                                                <img src="../public/image/plus.svg" alt="add">
-                                            </li>
-                                            <li class="plus2">
-                                                <img src="../public/image/plus.svg" alt="add">
-                                            </li>
-                                            <li class="plus2">
-                                                <img src="../public/image/plus.svg" alt="add">
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section id="project">
-        <div class="container">
-            <div class="row">
-                <%- include('diamond.html') %>
-                <!-- <div id="subject">
-                    <h2>
-                        <span class="circle shadow2"><em></em></span>
-                        <span class="title shadow2">Project...</span>
-                    </h2>
-                </div> -->
-                <article id="projectList" class="sec contBox shadow">
-                    <div class="tit">PROJECTS</div>
-                    <ul class="proj_wrap">
-                        <li class="shadow2">
-                            <div class="img">
-                                <img src="../public/image/por3.png" alt="Droptop">
-                            </div>
-                            <div class="desc">
-                                <strong>감사일기</strong>
-                            </div>
-                            <span class="frongBg">
-                            </span>
-                            <div id="explain">
-                                <ul class="tag">
-                                    <li>#NodeJS</li>
-                                    <li>#MongDB</li>
-                                    <li>#바닐라JS</li>
-                                </ul>
-                                <div class="desc">
-                                    <p>📌 개인작업 100%</p>
-                                    <p>📌 발행/수정/삭제 기능을 구현한 일기 프로그램</p>
-                                </div>
-                                <ul class="btns">
-                                    <li><a href="#">SITE</a></li>
-                                    <li><a href="#">PROCESS</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="shadow2">
-                            <div class="img">
-                                <img src="../public/image/por0.png" alt="Sidmool">
-                            </div>
-                            <div class="desc">
-                                <strong>시드물</strong>
-                            </div>
-                            <span class="frongBg">
-                            </span>
-                            <div id="explain">
-                                <ul class="tag">
-                                    <li>#SASS</li>
-                                    <li>#크로스브라우징</li>
-                                    <li>#데이터바인딩</li>
-                                </ul>
-                                <div class="desc">
-                                    <p>📌 개인작업 100%</p>
-                                    <p>📌 검색기능, 데이터 바인딩을 구현한 리뉴얼 사이트</p>
-                                </div>
-                                <ul class="btns">
-                                    <li><a href="#">SITE</a></li>
-                                    <li><a href="#">PROCESS</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="shadow2">
-                            <div class="img">
-                                <img src="../public/image/por5.png" alt="Portfolio">
-                            </div>
-                            <div class="desc">
-                                <strong>포트폴리오</strong>
-                            </div>
-                            <span class="frongBg">
-                            </span>
-                            <div id="explain">
-                                <ul class="tag">
-                                    <li>#반응형</li>
-                                    <li>#메타태그</li>
-                                    <li>#디자인</li>
-                                </ul>
-                                <div class="desc">
-                                    <p>📌 개인작업 100%</p>
-                                    <p>📌 직접 디자인한 반응형 포트폴리오 사이트</p>
-                                </div>
-                                <ul class="btns">
-                                    <li><a href="#">SITE</a></li>
-                                    <li><a href="#">PROCESS</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="shadow2">
-                            <div class="img">
-                                <img src="../public/image/por1.png" alt="Megabox">
-                            </div>
-                            <div class="desc">
-                                <strong>메가박스</strong>
-                            </div>
-                            <span class="frongBg">
-                            </span>
-                            <div id="explain">
-                                <ul class="tag">
-                                    <li>#반응형</li>
-                                    <li>#메타태그</li>
-                                    <li>#HTML5</li>
-                                </ul>
-                                <div class="desc">
-                                    <p>📌 개인작업 100%</p>
-                                    <p>📌 반응형을 고려한 메가박스 클론 사이트</p>
-                                </div>
-                                <ul class="btns">
-                                    <li><a href="#">SITE</a></li>
-                                    <li><a href="#">PROCESS</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="shadow2">
-                            <div class="img">
-                                <img src="../public/image/por2.png" alt="Gentium">
-                            </div>
-                            <div class="desc">
-                                <strong>젠티움</strong>
-                            </div>
-                            <span class="frongBg">
-                            </span>
-                            <div id="explain">
-                                <ul class="tag">
-                                    <li>#바닐라JS</li>
-                                    <li>#HTML5</li>
-                                    <li>#CSS3</li>
-                                </ul>
-                                <div class="desc">
-                                    <p>📌 개인작업 100%</p>
-                                    <p>📌 스크롤, 슬라이드 애니메이션 직접 구현</p>
-                                </div>
-                                <ul class="btns">
-                                    <li><a href="#">SITE</a></li>
-                                    <li><a href="#">PROCESS</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="shadow2">
-                            <div class="img">
-                                <img src="../public/image/por4.png" alt="weltree">
-                            </div>
-                            <div class="desc">
-                                <strong>웰트리</strong>
-                            </div>
-                            <span class="frongBg">
-                            </span>
-                            <div id="explain">
-                                <ul class="tag">
-                                    <li>#HTML5</li>
-                                    <li>#CSS3</li>
-                                    <li>#Jquery</li>
-                                </ul>
-                                <div class="desc">
-                                    <p>📌 개인작업 100%</p>
-                                    <p>📌 기본 웹퍼블리싱을 고려한 리뉴얼 사이트 </p>
-                                </div>
-                                <ul class="btns">
-                                    <li><a href="#">SITE</a></li>
-                                    <li><a href="#">PROCESS</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="shadow2">
-                            <div class="img">
-                                <img src="../public/image/por3.png" alt="Droptop">
-                            </div>
-                            <div class="desc">
-                                <strong>드롭탑</strong>
-                            </div>
-                            <span class="frongBg">
-                            </span>
-                            <div id="explain">
-                                <ul class="tag">
-                                    <li>#HTML5</li>
-                                    <li>#CSS3</li>
-                                    <li>#Jquery</li>
-                                </ul>
-                                <div class="desc">
-                                    <p>📌 개인작업 100%</p>
-                                    <p>📌 기본 웹퍼블리싱을 고려한 리뉴얼 사이트 </p>
-                                </div>
-                                <ul class="btns">
-                                    <li><a href="#">SITE</a></li>
-                                    <li><a href="#">PROCESS</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </article>
-            </div>
-        </div>
-    </section>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script>
+    <!-- <script>
         let getNickname = window.localStorage.getItem('nickname');
 
         var greeting = `안녕하세요 ${getNickname}님. 반나서 반갑습니다!`
@@ -570,6 +599,46 @@
             }
             var posTop = (page - 1) * $(window).height();
             mHtml.animate({scrollTop: posTop});
+        })
+    </script> -->
+    <script>
+        let wrap = document.getElementById('wrap');
+        let next = document.querySelectorAll('.next');
+        let prev = document.querySelectorAll('.prev');
+        let pickBtn = document.getElementById('pickBtn');
+        let pickPop = document.getElementById('pickPop');
+        let blackBg = document.getElementById('blackBg');
+        let pickClose = document.getElementById('pickClose');
+        
+        next.forEach((next)=>{
+            next.addEventListener('click', function(e){
+                let order = parseInt(e.target.dataset.id);
+                let rigthX = -100;
+                let moving = order * rigthX;
+
+                wrap.style.transform = `translateX(${moving}%)`
+            })
+        })
+
+        prev.forEach((prev)=>{
+            prev.addEventListener('click', function(e){
+                let order = parseInt(e.target.dataset.id);
+                let leftX = -100;
+                let moving = order * leftX;
+
+                wrap.style.transform = `translateX(${moving}%)`
+            })
+        }) 
+
+        pickBtn.addEventListener('click', function(){
+            blackBg.style.display = 'block';
+            pickPop.style.zIndex = '1';
+            pickPop.style.opacity = '1';
+        })
+        pickClose.addEventListener('click', function(){
+            blackBg.style.display = 'none';
+            pickPop.style.zIndex = '-999';
+            pickPop.style.opacity = '0';
         })
     </script>
 </body>
