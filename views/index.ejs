@@ -54,6 +54,22 @@
                         <p class="shake-vertical">이 심에 대해서 더 알아볼까요? 👇👇</p>
                     </article> -->
                     <button data-id='1' type="button" class="next">next</button>
+
+                </div>
+            </div>
+            <div id="blackBg1" class="blackBg">
+            </div>
+            <div id="greeting" class="popup">  
+                <div class="pick_bar">
+                    <button type="button" id="greetClose">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="pick_cont">
+                    <p>          
+                    </p>
                 </div>
             </div>
         </section>
@@ -553,9 +569,9 @@
                     <button type="button" class="next" id="pickBtn">NEXT</button>
                 </div>
             </div>
-            <div id="blackBg">
+            <div id="blackBg2" class="blackBg">
             </div>
-            <div id="pickPop">  
+            <div id="pickPop" class="popup">  
                 <div class="pick_bar">
                 </div>
                 <div class="pick_cont">
@@ -571,7 +587,6 @@
                 </div>
             </div>
         </section>
-
     </div>
 
 
@@ -602,14 +617,32 @@
         })
     </script> -->
     <script>
+        let getNickname = window.localStorage.getItem('nickname');
+        let blackBg1 = document.getElementById('blackBg1');
+        let greeting = document.getElementById('greeting');
+        let greetingText = document.querySelector('#greeting .pick_cont p');
+        let greetClose = document.getElementById('greetClose');
         let wrap = document.getElementById('wrap');
         let next = document.querySelectorAll('.next');
         let prev = document.querySelectorAll('.prev');
         let pickBtn = document.getElementById('pickBtn');
         let pickPop = document.getElementById('pickPop');
-        let blackBg = document.getElementById('blackBg');
+        let blackBg2 = document.getElementById('blackBg2');
         let pickClose = document.getElementById('pickClose');
         
+        var greetingTemp = `
+        안녕하세요 <span>${getNickname}님!</span> <br>
+        해당 사이트는 <span>Kim Soo</span>라는 심에 대한 
+        안내설명서 입니다💁‍♀️ <br>
+        설명서를 보시고 <span>PICK</span>을 결정해주세요😇 
+        `
+        greetingText.insertAdjacentHTML('beforeend', greetingTemp);
+        greetClose.addEventListener('click', ()=>{
+            blackBg1.style.display = 'none';
+            greeting.style.zIndex = '-999';
+            greeting.style.opacity = '0';
+        })
+
         next.forEach((next)=>{
             next.addEventListener('click', function(e){
                 let order = parseInt(e.target.dataset.id);
@@ -631,12 +664,12 @@
         }) 
 
         pickBtn.addEventListener('click', function(){
-            blackBg.style.display = 'block';
+            blackBg2.style.display = 'block';
             pickPop.style.zIndex = '1';
             pickPop.style.opacity = '1';
         })
         pickClose.addEventListener('click', function(){
-            blackBg.style.display = 'none';
+            blackBg2.style.display = 'none';
             pickPop.style.zIndex = '-999';
             pickPop.style.opacity = '0';
         })
