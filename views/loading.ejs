@@ -5,18 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <link rel="stylesheet" href="../public/css/main.css">
     <link rel="stylesheet" href="../public/css/임시.css">
 
     <title>Fancy's Portfolio</title>
 </head>
 <body>
-    <form>
-        <div>
-            <label>당신의 닉네임은 무엇인가요?</label>
-            <input type="text" name="title" id="nickname">
+    <section id="formNick">
+        <div class="container">
+            <div class="row">
+                <form class="inputNick">
+                    <article class="inputTop">
+                        <span class="profileImg">
+                            <img src="../public/image/profile.png" alt="profile">
+                        </span>
+                        <p>
+                            Fancy의 포트폴리오에 오신 걸 환영합니다! <br>
+                            <em>
+                                당신의 닉네임은 무엇인가요?
+                            </em>
+                        </p>
+                    </article>
+                    <article class="inputCont">
+                        <input type="text" name="title" id="nickname" placeholder="닉네임을 입력해주세요">
+                        <button type="button" id="submit">SEND</button>
+                    </article>
+                </form>
+            </div>
         </div>
-        <button type="button" id="submit">전송</button>
-    </form>
+    </section>
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

@@ -47,6 +47,88 @@ section .container .row {
 }
 
 
+/* loading */
+#formNick {
+    width: 100%;
+    height: 100%;
+}
+.inputNick {
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.inputNick .inputTop {
+    background: url('../image/nickBg.png') no-repeat center;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    border-radius: 30px 30px 0 0;
+    padding: 48px;
+    color: #2A558F;
+}
+.inputNick .inputTop .profileImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    background: url('../image/profileBg.jpg') no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 6px solid #eaeaea;
+    position: absolute;
+    left: -45px;
+    top: -30px;
+}
+.inputNick .inputTop .profileImg > img {
+    width: 90px;
+    height: 90px;
+    margin-top: 20px;
+}
+.inputNick .inputTop p > em {
+    font-weight: 600;
+}
+.inputNick .inputCont {
+    background: #eaeaea;
+    border-radius: 0 0 30px 30px;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.inputNick .inputCont input {
+    width: 50%;
+    border-radius: 30px;
+    padding: 8px 28px;
+    font-size: 2rem;
+    margin-bottom: 32px;
+}
+.inputNick .inputCont input::placeholder {
+    color: #ddd;
+}
+.inputNick .inputCont button {
+    border-radius: 30px;
+    background: linear-gradient(0deg, rgba(211,211,211,1) 0%, rgba(234,234,234,1) 100%);
+    padding: 8px 48px;
+    font-size: 1.8rem;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+    color: #2A558F;
+    -webkit-box-shadow: 3px 3px 5px 1px rgba(0,0,0,0.52); 
+    box-shadow: 3px 3px 5px 1px rgba(0,0,0,0.52);
+}
+.inputNick .inputCont button:hover {
+    color: #3BA16A;
+}
+.inputNick .inputCont button:active {
+    -webkit-box-shadow: inset 1px 1px 5px 1px rgba(0,0,0,0.52); 
+    box-shadow: inset 1px 1px 5px 1px rgba(0,0,0,0.52);
+}
+
+
 /* prev, next 버튼 */
 .prev, .next {
     background: #eaeaea;
@@ -72,7 +154,10 @@ section .container .row {
 .prev:hover, .next:hover {
     color: #3BA16A;
 }
-
+.prev:active, .next:active {
+    -webkit-box-shadow: inset 1px 1px 5px 1px rgba(0,0,0,0.52); 
+    box-shadow: inset 1px 1px 5px 1px rgba(0,0,0,0.52);
+}
 
 /* 다이아몬드 라인 */
 #diamond {
