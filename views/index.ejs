@@ -26,7 +26,7 @@
                         </div>
                         <div class="cont_desc">
                             <p class="p-1">
-                                sim's name is . . .
+                                Sim's name is . . .
                                 <span style="display: block;">kim soo</span>
                             </p>
                             <p class="p-2">
@@ -54,7 +54,6 @@
                         <p class="shake-vertical">이 심에 대해서 더 알아볼까요? 👇👇</p>
                     </article> -->
                     <button data-id='1' type="button" class="next">next</button>
-
                 </div>
             </div>
             <div id="blackBg1" class="blackBg">
@@ -88,17 +87,17 @@
                             </div>
                             <ul>
                                 <li>
-                                    <img src="../public/image/Book.png" alt="대학교">
+                                    <img src="../public/image/Book.png" alt="고등학교">
                                     <strong>Lincoln High School</strong>
-                                    <p>2021.02 - 2017.08</p>
+                                    <p>2009.02 - 2012.02</p>
                                 </li>
                                 <li>
                                     <img src="../public/image/line.svg">
                                 </li>
                                 <li>
                                     <img src="../public/image/Book.png" alt="대학교">
-                                    <strong>Myungju UNIV.</strong>
-                                    <p>2021.02 - 2017.08</p>
+                                    <strong>Myungji UNIV.</strong>
+                                    <p>2012.02 - 2017.08</p>
                                 </li>
                                 <li>
                                     <img src="../public/image/line2.svg">
@@ -379,12 +378,6 @@
             <div class="container">
                 <div class="row">
                     <%- include('diamond.html') %>
-                    <!-- <div id="subject">
-                        <h2>
-                            <span class="circle shadow2"><em></em></span>
-                            <span class="title shadow2">Project...</span>
-                        </h2>
-                    </div> -->
                     <article id="projectList" class="sec contBox shadow">
                         <div class="tit">PROJECTS</div>
                         <ul class="proj_wrap">
@@ -566,7 +559,214 @@
                         </ul>
                     </article>
                     <button data-id='3' type="button" class="prev">prev</button>
-                    <button type="button" class="next" id="pickBtn">NEXT</button>
+                    <button type="button" class="next" id="pickBtn">next</button>
+                </div>
+            </div>
+            <div id="blackBg2" class="blackBg">
+            </div>
+            <div id="pickPop" class="popup">  
+                <div class="pick_bar">
+                </div>
+                <div class="pick_cont">
+                    <p>
+                        이 심을 <span>PICK</span> 하고 함께
+                        <span>PLAY</span> 하시겠습니까? <br>
+                        <em>*️⃣ YES를 누르시면 CONTACT로 이동합니다.</em>
+                    </p>
+                    <div>
+                        <button type="button" data-id='5' id="pickNext">YES🥰</button>
+                        <button type="button" id="pickClose">NO🥲</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="project">
+            <div class="container">
+                <div class="row">
+                    <%- include('diamond.html') %>
+                    <article id="projectList" class="sec contBox shadow">
+                        <div class="tit">PROJECTS</div>
+                        <ul class="proj_wrap">
+                            <li class="shadow2">
+                                <div class="img">
+                                    <img src="../public/image/por3.png" alt="Droptop">
+                                </div>
+                                <div class="desc">
+                                    <strong>감사일기</strong>
+                                </div>
+                                <span class="frongBg">
+                                </span>
+                                <div id="explain">
+                                    <ul class="tag">
+                                        <li>#NodeJS</li>
+                                        <li>#MongDB</li>
+                                        <li>#바닐라JS</li>
+                                    </ul>
+                                    <div class="desc">
+                                        <p>📌 개인작업 100%</p>
+                                        <p>📌 발행/수정/삭제 기능을 구현한 일기 프로그램</p>
+                                    </div>
+                                    <ul class="btns">
+                                        <li><a href="#">SITE</a></li>
+                                        <li><a href="#">PROCESS</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="shadow2">
+                                <div class="img">
+                                    <img src="../public/image/por0.png" alt="Sidmool">
+                                </div>
+                                <div class="desc">
+                                    <strong>시드물</strong>
+                                </div>
+                                <span class="frongBg">
+                                </span>
+                                <div id="explain">
+                                    <ul class="tag">
+                                        <li>#SASS</li>
+                                        <li>#크로스브라우징</li>
+                                        <li>#데이터바인딩</li>
+                                    </ul>
+                                    <div class="desc">
+                                        <p>📌 개인작업 100%</p>
+                                        <p>📌 검색기능, 데이터 바인딩을 구현한 리뉴얼 사이트</p>
+                                    </div>
+                                    <ul class="btns">
+                                        <li><a href="#">SITE</a></li>
+                                        <li><a href="#">PROCESS</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="shadow2">
+                                <div class="img">
+                                    <img src="../public/image/por5.png" alt="Portfolio">
+                                </div>
+                                <div class="desc">
+                                    <strong>포트폴리오</strong>
+                                </div>
+                                <span class="frongBg">
+                                </span>
+                                <div id="explain">
+                                    <ul class="tag">
+                                        <li>#반응형</li>
+                                        <li>#메타태그</li>
+                                        <li>#디자인</li>
+                                    </ul>
+                                    <div class="desc">
+                                        <p>📌 개인작업 100%</p>
+                                        <p>📌 직접 디자인한 반응형 포트폴리오 사이트</p>
+                                    </div>
+                                    <ul class="btns">
+                                        <li><a href="#">SITE</a></li>
+                                        <li><a href="#">PROCESS</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="shadow2">
+                                <div class="img">
+                                    <img src="../public/image/por1.png" alt="Megabox">
+                                </div>
+                                <div class="desc">
+                                    <strong>메가박스</strong>
+                                </div>
+                                <span class="frongBg">
+                                </span>
+                                <div id="explain">
+                                    <ul class="tag">
+                                        <li>#반응형</li>
+                                        <li>#메타태그</li>
+                                        <li>#HTML5</li>
+                                    </ul>
+                                    <div class="desc">
+                                        <p>📌 개인작업 100%</p>
+                                        <p>📌 반응형을 고려한 메가박스 클론 사이트</p>
+                                    </div>
+                                    <ul class="btns">
+                                        <li><a href="#">SITE</a></li>
+                                        <li><a href="#">PROCESS</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="shadow2">
+                                <div class="img">
+                                    <img src="../public/image/por2.png" alt="Gentium">
+                                </div>
+                                <div class="desc">
+                                    <strong>젠티움</strong>
+                                </div>
+                                <span class="frongBg">
+                                </span>
+                                <div id="explain">
+                                    <ul class="tag">
+                                        <li>#바닐라JS</li>
+                                        <li>#HTML5</li>
+                                        <li>#CSS3</li>
+                                    </ul>
+                                    <div class="desc">
+                                        <p>📌 개인작업 100%</p>
+                                        <p>📌 스크롤, 슬라이드 애니메이션 직접 구현</p>
+                                    </div>
+                                    <ul class="btns">
+                                        <li><a href="#">SITE</a></li>
+                                        <li><a href="#">PROCESS</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="shadow2">
+                                <div class="img">
+                                    <img src="../public/image/por4.png" alt="weltree">
+                                </div>
+                                <div class="desc">
+                                    <strong>웰트리</strong>
+                                </div>
+                                <span class="frongBg">
+                                </span>
+                                <div id="explain">
+                                    <ul class="tag">
+                                        <li>#HTML5</li>
+                                        <li>#CSS3</li>
+                                        <li>#Jquery</li>
+                                    </ul>
+                                    <div class="desc">
+                                        <p>📌 개인작업 100%</p>
+                                        <p>📌 기본 웹퍼블리싱을 고려한 리뉴얼 사이트 </p>
+                                    </div>
+                                    <ul class="btns">
+                                        <li><a href="#">SITE</a></li>
+                                        <li><a href="#">PROCESS</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="shadow2">
+                                <div class="img">
+                                    <img src="../public/image/por3.png" alt="Droptop">
+                                </div>
+                                <div class="desc">
+                                    <strong>드롭탑</strong>
+                                </div>
+                                <span class="frongBg">
+                                </span>
+                                <div id="explain">
+                                    <ul class="tag">
+                                        <li>#HTML5</li>
+                                        <li>#CSS3</li>
+                                        <li>#Jquery</li>
+                                    </ul>
+                                    <div class="desc">
+                                        <p>📌 개인작업 100%</p>
+                                        <p>📌 기본 웹퍼블리싱을 고려한 리뉴얼 사이트 </p>
+                                    </div>
+                                    <ul class="btns">
+                                        <li><a href="#">SITE</a></li>
+                                        <li><a href="#">PROCESS</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </article>
+                    <button data-id='4' type="button" class="prev">prev</button>
+                    <!-- <button type="button" class="next" id="pickBtn">next</button> -->
                 </div>
             </div>
             <div id="blackBg2" class="blackBg">
@@ -629,6 +829,7 @@
         let pickPop = document.getElementById('pickPop');
         let blackBg2 = document.getElementById('blackBg2');
         let pickClose = document.getElementById('pickClose');
+        let pickNext = document.getElementById('pickNext');
         
         var greetingTemp = `
         안녕하세요 <span>${getNickname}님!</span> <br>
@@ -667,6 +868,13 @@
             blackBg2.style.display = 'block';
             pickPop.style.zIndex = '1';
             pickPop.style.opacity = '1';
+        })
+        pickNext.addEventListener('click', function(e){
+            let order = parseInt(e.target.dataset.id);
+                let rigthX = -100;
+                let moving = order * rigthX;
+
+            wrap.style.transform = `translateX(${moving}%)`
         })
         pickClose.addEventListener('click', function(){
             blackBg2.style.display = 'none';

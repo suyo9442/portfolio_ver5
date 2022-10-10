@@ -1,3 +1,11 @@
+/* root */
+:root {
+    --font-medium: 1.8rem;
+    --font-large: 2rem;
+    --font-larger: 2.4rem;
+}
+
+
 /* 레이아웃 */
 html {
     font-size: 62.5%;
@@ -12,7 +20,7 @@ body {
     /* font-family: 'Kanit', sans-serif; */
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 400;
-    font-size: 2.4rem;
+    font-size: var(--font-medium);
     color: #222021;
 }
 #wrap {
@@ -22,6 +30,7 @@ body {
 section {
     flex-shrink: 0;
     width: 100%;
+    /* pickpop absolute 기준 */
     position: relative;
 }
 section .container  {
@@ -31,8 +40,9 @@ section .container  {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
     padding-bottom: 50px;
+    position: relative;
+    outline: 1px solid red;
 }
 section .container .row {
     width: 100%;
@@ -103,7 +113,6 @@ section .container .row {
     width: 50%;
     border-radius: 30px;
     padding: 8px 28px;
-    font-size: 2rem;
     margin-bottom: 32px;
 }
 .inputNick .inputCont input::placeholder {
@@ -113,7 +122,6 @@ section .container .row {
     border-radius: 30px;
     background: linear-gradient(0deg, rgba(211,211,211,1) 0%, rgba(234,234,234,1) 100%);
     padding: 8px 48px;
-    font-size: 1.8rem;
     font-family: 'Kanit', sans-serif;
     font-weight: 700;
     color: #2A558F;
@@ -144,11 +152,11 @@ section .container .row {
     position: absolute;
 }
 .next {
-    right: -18%;
+    right: -12%;
     bottom: 10%;
 }
 .prev {
-    left: -18%;
+    left: -12%;
     bottom: 10%;
 }
 .prev:hover, .next:hover {
@@ -211,7 +219,6 @@ section .container .row {
 }
 #profileCont {
     font-family: 'Kanit', sans-serif;
-    font-size: 3.2rem;
     display: flex;
     justify-content: center;
 }
@@ -225,7 +232,9 @@ section .container .row {
     width: 320px;
     height: 320px;
     border-radius: 50%;
-    background: linear-gradient(90deg, #8dafca 0%, #9ac3b5 100%);
+    /* background: linear-gradient(90deg, #8dafca 0%, #9ac3b5 100%); */
+    background: url('../image/nickBg.png') center no-repeat;
+    background-size: cover;
     overflow: hidden;
     position: relative;
 }
@@ -238,21 +247,22 @@ section .container .row {
 }
 #profileCont .cont_desc p {
     line-height: 60px;
+    font-size: 2.8rem;
 }
 #profileCont .cont_desc p span {
-    font-size: 7.2rem;
     font-weight: 800;
+    font-size: 5.6rem;
 }
 #profileCont .cont_desc .p-1 {
-    text-transform: uppercase;
     font-weight: 800;
-    margin-bottom: 24px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
 }
 #profileCont .cont_desc .p-1 span {
     color: #4C7AB0;
 }
 #profileCont .cont_desc .p-2 {
-    margin-bottom: 32px;
+    margin-bottom: 18px;
 }
 #profileCont .cont_desc .p-2 span {
     text-transform: capitalize;
@@ -343,22 +353,22 @@ section .container .row {
     }
   }
   
-
-
-
-
+  
+  
+  
+  
+/* experience */
 #subject h2 {
     overflow: hidden;
     font-family: 'Kanit', sans-serif;
     font-weight: 500;
     color: #3BA16A;
-    padding: 0 0 24px 0;
+    padding: 0 0 20px 0;
     margin-bottom: 16px;
 }
 #subject h2 > span {
     background: #eaeaea;
     display: inline-block;
-    font-size: 2.6rem;
     float: left;
 }
 #subject h2 .circle {
@@ -378,14 +388,13 @@ section .container .row {
     background: #3BA16A;
 }
 #subject h2 .title {
-    height: 50px;
+    /* height: px; */
     padding: 0 24px;
     border-radius: 30px;
     position: relative;
     left: -10px;
     line-height: 50px;
 }
-/* experience */
 #experCont > div.education {
     margin-bottom: 100px;
 }
@@ -401,6 +410,9 @@ section .container .row {
     align-items: center;
     justify-content: center;
 }
+#experCont ul li:nth-child(odd) img{
+    width: 100px;
+}
 #experCont ul li:nth-child(even) img{
     width: 150px;
 }
@@ -412,7 +424,6 @@ section .container .row {
 }
 #experCont ul li p {
     font-family: 'Kanit', sans-serif;
-    font-size: 2rem;
 }
 
 
@@ -428,8 +439,8 @@ section .container .row {
     height: 50px;
     background: #eaeaea;
     border-radius: 30px;
-    font-size: 2.8rem;
     font-family: 'Kanit', sans-serif;
+    font-size: var(--font-larger);
     font-weight: 400;
     display: flex;
     justify-content: space-between;
@@ -459,8 +470,7 @@ section .container .row {
     display: inline-block;
 }
 #subject2 .wrap .list img {
-    width: 18px;
-
+    width: 14px;
 }
 #skillCont {
     overflow-y: scroll;
@@ -529,7 +539,7 @@ section .container .row {
 }
 .sec .tit {
     background: #8F9FB6;
-    font-size: 2.6rem;
+    font-size: var(--font-larger);
     font-family: 'Kanit', sans-serif;
     font-weight: 500;
     text-align: center;
@@ -553,6 +563,7 @@ section .container .row {
     align-items: center;
 }
 #favor .content_wrap .favor .thumbs p {
+    /* thumbs-up 사이즈 */
     font-size: 10rem;
 }
 #favor .content_wrap .favor .thumbs1 {
@@ -682,7 +693,6 @@ section .container .row {
 #projectList .proj_wrap li > div.desc strong {
     color: #4C7AB0;
     font-weight: 500;
-    font-size: 2.2rem;
 }
 #projectList .proj_wrap li:hover .frongBg {
     opacity: 0.7;
@@ -717,7 +727,7 @@ section .container .row {
     margin-bottom: 16px;
 }
 #projectList .proj_wrap li > #explain .tag li {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: #eaeaea;
     font-weight: 300;
     display: inline-block;
@@ -743,7 +753,7 @@ section .container .row {
 }
 #projectList .proj_wrap li > #explain .btns li a {
     font-family: 'Kanit', sans-serif;
-    font-size: 2.4rem;
+    font-size: 2rem;
     font-weight: 500;
 }
 #projectList .proj_wrap li > #explain .btns li:hover {
@@ -808,18 +818,17 @@ section .container .row {
     line-height: 3.2rem;
 }
 .popup .pick_cont p {
-    font-size: 2.8rem;
     font-weight: 500;
     text-align: center;
     margin-bottom: 48px;
 }
 .popup .pick_cont p > span {
     font-family: 'Kanit', sans-serif;
-    font-size: 3rem;
+    font-size: var(--font-large);
     font-weight: 700;
 }
 .popup .pick_cont p > em {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: #8F9FB6;
     font-weight: 400;
 }
@@ -828,7 +837,7 @@ section .container .row {
     margin: 4px;
     background: #eaeaea;
     font-family: 'Kanit', sans-serif;
-    font-size: 2.4rem;
+    /* font-size: 2.4rem; */
     font-weight: 500;
     padding: 2px 10px;
     border-radius: 8px;
