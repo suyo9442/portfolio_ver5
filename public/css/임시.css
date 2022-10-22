@@ -42,18 +42,22 @@ section .container  {
     align-items: center;
     padding-bottom: 50px;
     position: relative;
-    outline: 1px solid red;
 }
 section .container .row {
     width: 100%;
 }
-.shadow {
+.shadow1 {
     -webkit-box-shadow: 6px 6px 20px 5px rgba(0, 0, 0, 0.396); 
     box-shadow: 6px 6px 20px 5px rgba(0, 0, 0, 0.396);
 }
 .shadow2 {
     -webkit-box-shadow: 6px 6px 15px -5px rgba(0,0,0,0.5); 
     box-shadow: 6px 6px 15px -5px rgba(0,0,0,0.5);
+}
+/* 버튼 쉐도우 */
+.shadow3 {
+    -webkit-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.26); 
+    box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.26);
 }
 
 
@@ -125,8 +129,6 @@ section .container .row {
     font-family: 'Kanit', sans-serif;
     font-weight: 700;
     color: #2A558F;
-    -webkit-box-shadow: 3px 3px 5px 1px rgba(0,0,0,0.52); 
-    box-shadow: 3px 3px 5px 1px rgba(0,0,0,0.52);
 }
 .inputNick .inputCont button:hover {
     color: #3BA16A;
@@ -147,8 +149,6 @@ section .container .row {
     font-weight: 600;
     text-transform: uppercase;
     border-radius: 30px;
-    -webkit-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.26); 
-    box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.26);
     position: absolute;
 }
 .next {
@@ -227,6 +227,16 @@ section .container .row {
     justify-content: center;
     align-items: center;
     margin-right: 56px;
+    position: relative;
+}
+#profileCont .cont_img .cont_diamond {
+    width: 75px;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+
 }
 #profileCont .cont_img .imgBg {
     width: 320px;
@@ -762,9 +772,6 @@ section .container .row {
 #projectList .proj_wrap li > #explain .btns li:hover a {
     color: #6BB17B;
 }
-
-
-
 .proj_wrap::-webkit-scrollbar {
     width: 20px;  /* 스크롤바의 너비 */
 }
@@ -778,7 +785,82 @@ section .container .row {
 }
 
 
+/* contact */
+#contactCenter {
+    padding-top: 270px;
+    position: relative;
+    background: url('../image/contactBg.jpg') no-repeat center;
+    background-size: cover;
+}
+#contactCenter .cont_profile {
+    width: 430px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#contactCenter .cont_diamond {
+    width: 75px;
+    position: absolute;
+    left: 50%;
+    top: 185px;
+    transform: translateX(-50%);
+}
+#contactCenter .contact_menu .m_set {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    cursor: pointer;
+}
+#contactCenter .contact_menu .m_set .title {
+    position: static;
+    margin: 0 20px;
+    padding: 0 30px;
+    color: #4C7AB0;
+}
+#contactCenter .contact_menu .m_set .title:hover {
+    color: #3BA16A;
+}
+#contactCenter .contact_menu .m_set .title:active {
+    -webkit-box-shadow: inset 1px 1px 5px 1px rgba(0,0,0,0.52); 
+    box-shadow: inset 1px 1px 5px 1px rgba(0,0,0,0.52);
+}
+#contactCenter .contact_menu .m_left .circle {
+    position: absolute;
+    right: -16px;
+    background: none;
+}
+#contactCenter .contact_menu .m1 {
+    left: 35%;
+    top: 30%;
+}
+#contactCenter .contact_menu .m2 {
+    left: 25%;
+    top: 50%;
+}
+#contactCenter .contact_menu .m3 {
+    left: 22%;
+    top: 70%;
+}
+#contactCenter .contact_menu .m_right .circle {
+    position: absolute;
+    left: -10px;
+    background: none;
+}
+#contactCenter .contact_menu .m4 {
+    right: 25%;
+    top: 30%;
+}
+#contactCenter .contact_menu .m5 {
+    right: 5%;
+    top: 50%;
+}
+#contactCenter .contact_menu .m6 {
+    right: 5%;
+    top: 70%;
+}
 
+
+/* pop-up CSS */
 .blackBg {
     width: 100%;
     height: 100%;
@@ -803,6 +885,7 @@ section .container .row {
     left: 50%;
     transform: translate(-50%, -50%);
     transition: all 0.3s;
+    z-index: 100;
 }
 .popup .pick_bar {
     background: #8F9FB6;
@@ -861,13 +944,14 @@ section .container .row {
     margin-right: 40px;
     background: #eaeaea;
     border-radius: 50%;
-    -webkit-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.26); 
-    box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.26);
 }
 #greeting .pick_bar > button > svg {
     width: 28px;
     stroke-width: 3px;
 } 
+#greeting .pick_bar > button > svg:hover {
+        color: #3BA16A;
+}
 #greeting .pick_cont {
     line-height: 4.2rem;
 }
@@ -880,3 +964,4 @@ section .container .row {
     opacity: 1;
     z-index: -999;
 }
+
